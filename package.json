@@ -1,0 +1,28 @@
+{
+  "name": "cooker",
+  "version": "1.0.0",
+  "description": "for web automation",
+  "main": "index.js",
+  "dependencies": {
+    "phantomjs": "2.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangwei13/cooker.git"
+  },
+  "keywords": [
+    "phantomjs",
+    "web",
+    "automation"
+  ],
+  "author": "zhangwei13 <alucard.hust@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhangwei13/cooker/issues"
+  },
+  "homepage": "https://github.com/zhangwei13/cooker#readme"
+}
+

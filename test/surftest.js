@@ -4,13 +4,14 @@
  * MIT License
  */
 
-var surf = require("../lib/Surf").create();
-var url="http://tieba.baidu.com";
+var surf = require("../lib/Surf").create(true, true);
+var url="http://www.baidu.com";
 var commonHrefInfos = [];
 var specialHrefInfos = [];
 
 
 function findHrefs() {
+
     result = surf.page.evaluate(function(){
         var hrefElements = document.querySelectorAll('a[href]');
         var reg = new RegExp("^http");
@@ -130,6 +131,7 @@ function end() {
 }
 
 surf.open(url);
+surf.clickBySelector(".btn_confirm");
 surf.want(findHrefs, 1, "findHrefs");
 surf.want(printHrefs, 1, "printHrefs");
 surf.addBatchActions(
